@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9E857769-B0C9-4354-B284-74927C6D8440}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>marathonskills</RootNamespace>
+    <AssemblyName>marathonskills</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\Downloads\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuthificationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuthificationForm.Designer.cs">
+      <DependentUpon>AuthificationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charityform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Charityform.Designer.cs">
+      <DependentUpon>Charityform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="contactform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contactform.Designer.cs">
+      <DependentUpon>contactform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChooserRunners.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooserRunners.Designer.cs">
+      <DependentUpon>ChooserRunners.cs</DependentUpon>
+    </Compile>
+    <Compile Include="infoCharity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="infoCharity.Designer.cs">
+      <DependentUpon>infoCharity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuAdmin.Designer.cs">
+      <DependentUpon>menuAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuCoordinator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuCoordinator.Designer.cs">
+      <DependentUpon>menuCoordinator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuRunner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuRunner.Designer.cs">
+      <DependentUpon>menuRunner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="moreinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="moreinfo.Designer.cs">
+      <DependentUpon>moreinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RunnerReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RunnerReg.Designer.cs">
+      <DependentUpon>RunnerReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SponsorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SponsorForm.Designer.cs">
+      <DependentUpon>SponsorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sql.cs" />
+    <Compile Include="thxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="thxForm.Designer.cs">
+      <DependentUpon>thxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="variables.cs" />
+    <EmbeddedResource Include="AuthificationForm.resx">
+      <DependentUpon>AuthificationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charityform.resx">
+      <DependentUpon>Charityform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="contactform.resx">
+      <DependentUpon>contactform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChooserRunners.resx">
+      <DependentUpon>ChooserRunners.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="infoCharity.resx">
+      <DependentUpon>infoCharity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuAdmin.resx">
+      <DependentUpon>menuAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuCoordinator.resx">
+      <DependentUpon>menuCoordinator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuRunner.resx">
+      <DependentUpon>menuRunner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="moreinfo.resx">
+      <DependentUpon>moreinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RunnerReg.resx">
+      <DependentUpon>RunnerReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SponsorForm.resx">
+      <DependentUpon>SponsorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="thxForm.resx">
+      <DependentUpon>thxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="res\charity\charity-descriptions.pdf" />
+    <None Include="res\charity\charity-logos.pptx" />
+    <None Include="res\charity\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="res\flags\flag_andorra.png" />
+    <Content Include="res\flags\flag_argentina.png" />
+    <Content Include="res\flags\flag_australia.png" />
+    <Content Include="res\flags\flag_austria.png" />
+    <Content Include="res\flags\flag_belgium.png" />
+    <Content Include="res\flags\flag_botswana.png" />
+    <Content Include="res\flags\flag_brazil.png" />
+    <Content Include="res\flags\flag_bulgaria.png" />
+    <Content Include="res\flags\flag_cameroon.png" />
+    <Content Include="res\flags\flag_canada.png" />
+    <Content Include="res\flags\flag_central_african_republic.png" />
+    <Content Include="res\flags\flag_chile.png" />
+    <Content Include="res\flags\flag_china.png" />
+    <Content Include="res\flags\flag_chinese_taipei.png" />
+    <Content Include="res\flags\flag_colombia.png" />
+    <Content Include="res\flags\flag_croatia.png" />
+    <Content Include="res\flags\flag_czech_republic.png" />
+    <Content Include="res\flags\flag_denmark.png" />
+    <Content Include="res\flags\flag_dominican_republic.png" />
+    <Content Include="res\flags\flag_ecuador.png" />
+    <Content Include="res\flags\flag_egypt.png" />
+    <Content Include="res\flags\flag_el_salvador.png" />
+    <Content Include="res\flags\flag_equatorial_guinea.png" />
+    <Content Include="res\flags\flag_estonia.png" />
+    <Content Include="res\flags\flag_finland.png" />
+    <Content Include="res\flags\flag_france.png" />
+    <Content Include="res\flags\flag_germany.png" />
+    <Content Include="res\flags\flag_greece.png" />
+    <Content Include="res\flags\flag_guatemala.png" />
+    <Content Include="res\flags\flag_guinea-bissau.png" />
+    <Content Include="res\flags\flag_guinea.png" />
+    <Content Include="res\flags\flag_honduras.png" />
+    <Content Include="res\flags\flag_hong_kong.png" />
+    <Content Include="res\flags\flag_hungary.png" />
+    <Content Include="res\flags\flag_india.png" />
+    <Content Include="res\flags\flag_indonesia.png" />
+    <Content Include="res\flags\flag_ireland.png" />
+    <Content Include="res\flags\flag_israel.png" />
+    <Content Include="res\flags\flag_italy.png" />
+    <Content Include="res\flags\flag_ivory_coast.png" />
+    <Content Include="res\flags\flag_jamaica.png" />
+    <Content Include="res\flags\flag_japan.png" />
+    <Content Include="res\flags\flag_jordan.png" />
+    <Content Include="res\flags\flag_kenya.png" />
+    <Content Include="res\flags\flag_latvia.png" />
+    <Content Include="res\flags\flag_liechtenstein.png" />
+    <Content Include="res\flags\flag_lithuania.png" />
+    <Content Include="res\flags\flag_luxembourg.png" />
+    <Content Include="res\flags\flag_macau.png" />
+    <Content Include="res\flags\flag_macedonia.png" />
+    <Content Include="res\flags\flag_madagascar.png" />
+    <Content Include="res\flags\flag_malaysia.png" />
+    <Content Include="res\flags\flag_mali.png" />
+    <Content Include="res\flags\flag_malta.png" />
+    <Content Include="res\flags\flag_mauritius.png" />
+    <Content Include="res\flags\flag_mexico.png" />
+    <Content Include="res\flags\flag_moldova.png" />
+    <Content Include="res\flags\flag_monaco.png" />
+    <Content Include="res\flags\flag_montenegro.png" />
+    <Content Include="res\flags\flag_netherlands.png" />
+    <Content Include="res\flags\flag_new_zealand.png" />
+    <Content Include="res\flags\flag_nicaragua.png" />
+    <Content Include="res\flags\flag_niger.png" />
+    <Content Include="res\flags\flag_norway.png" />
+    <Content Include="res\flags\flag_panama.png" />
+    <Content Include="res\flags\flag_paraguay.png" />
+    <Content Include="res\flags\flag_peru.png" />
+    <Content Include="res\flags\flag_philippines.png" />
+    <Content Include="res\flags\flag_poland.png" />
+    <Content Include="res\flags\flag_portugal.png" />
+    <Content Include="res\flags\flag_puerto_rico.png" />
+    <Content Include="res\flags\flag_qatar.png" />
+    <Content Include="res\flags\flag_romania.png" />
+    <Content Include="res\flags\flag_russia.png" />
+    <Content Include="res\flags\flag_saudi_arabia.png" />
+    <Content Include="res\flags\flag_senegal.png" />
+    <Content Include="res\flags\flag_singapore.png" />
+    <Content Include="res\flags\flag_slovakia.png" />
+    <Content Include="res\flags\flag_south_africa.png" />
+    <Content Include="res\flags\flag_south_korea.png" />
+    <Content Include="res\flags\flag_spain.png" />
+    <Content Include="res\flags\flag_sweden.png" />
+    <Content Include="res\flags\flag_switzerland.png" />
+    <Content Include="res\flags\flag_thailand.png" />
+    <Content Include="res\flags\flag_turkey.png" />
+    <Content Include="res\flags\flag_united_arab_emirates.png" />
+    <Content Include="res\flags\flag_united_kingdom.png" />
+    <Content Include="res\flags\flag_uruguay.png" />
+    <Content Include="res\flags\flag_usa.png" />
+    <Content Include="res\flags\flag_vatican.png" />
+    <Content Include="res\flags\flag_venezuela.png" />
+    <Content Include="res\flags\flag_vietnam.png" />
+    <Content Include="res\charity\arise-logo.png" />
+    <Content Include="res\charity\aves-do-brazil-logo.png" />
+    <Content Include="res\charity\clara-santos-oliveira-institute-logo.png" />
+    <Content Include="res\charity\conquer-cancer-brazil.png" />
+    <Content Include="res\charity\diabetes-brazil-logo.png" />
+    <Content Include="res\charity\heart-health-sao-paulo-logo.png" />
+    <Content Include="res\charity\human-rights-centre-logo.png" />
+    <Content Include="res\charity\oxfam-international-logo.png" />
+    <Content Include="res\charity\querstadtein-logo.png" />
+    <Content Include="res\charity\save-the-children-fund-logo.png" />
+    <Content Include="res\charity\stay-pumped-logo.png" />
+    <Content Include="res\charity\the-red-cross-logo.png" />
+    <Content Include="res\charity\upbeat-logo.png" />
+    <Content Include="res\charity\wwsm-rescue-logo.png" />
+    <Content Include="res\vopros.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
