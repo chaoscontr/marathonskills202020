@@ -67,5 +67,13 @@ namespace marathonskills
             checkClose = false;
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            userManagment um = new userManagment();
+            um.Show();
+            checkClose = false;
+            this.Close();
+        }
     }
 }

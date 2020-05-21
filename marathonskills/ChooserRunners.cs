@@ -106,5 +106,30 @@ namespace marathonskills
                 this.Close();
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (variables.gUserLogin == "" || variables.gUserLogin == null)
+            {
+                RunnerReg rg = new RunnerReg();
+                rg.Show();
+                checkClose = false;
+                this.Close();
+            }
+            else
+            {
+                if (MessageBox.Show("Вы уже авторизованы в системе. Для продолжения выйдите с своего аккаунта.\nВыйти?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    variables.gUserId = "";
+                    variables.gUserLogin = "";
+                    variables.gUserPassword = "";
+                    variables.gUserRole = "";
+                    RunnerReg rg = new RunnerReg();
+                    rg.Show();
+                    checkClose = false;
+                    this.Close();
+                }
+            }
+        }
     }
 }

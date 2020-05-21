@@ -10,6 +10,7 @@ namespace marathonskills
         public static MySqlDataReader reader;
         public static MySqlDataAdapter adapter;
         public static DataTable dt;
+        public static DataSet ds;
         public static string sql;
         public static string gCharityDescription;
         public static string gCharityName;

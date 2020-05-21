@@ -31,10 +31,10 @@
             this.components = new System.ComponentModel.Container();
             this.timerDay = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
@@ -59,14 +59,16 @@
             this.panel1.Size = new System.Drawing.Size(603, 49);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
+            // button1
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(2, 340);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(603, 49);
-            this.panel2.TabIndex = 1;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(10, 8);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(87, 30);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Назад";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -79,6 +81,15 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "MARATHON SKILLS 2020";
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Location = new System.Drawing.Point(2, 340);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(603, 49);
+            this.panel2.TabIndex = 1;
+            // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -90,17 +101,6 @@
             this.label2.Text = "label2";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(10, 8);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 30);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Назад";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -110,6 +110,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Пользователи";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label3
             // 

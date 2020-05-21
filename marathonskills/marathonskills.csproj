@@ -85,6 +85,12 @@
     <Compile Include="infoCharity.Designer.cs">
       <DependentUpon>infoCharity.cs</DependentUpon>
     </Compile>
+    <Compile Include="mainresult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainresult.Designer.cs">
+      <DependentUpon>mainresult.cs</DependentUpon>
+    </Compile>
     <Compile Include="menuAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="regMarathon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="regMarathon.Designer.cs">
+      <DependentUpon>regMarathon.cs</DependentUpon>
+    </Compile>
     <Compile Include="RunnerReg.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +142,24 @@
     <Compile Include="thxForm.Designer.cs">
       <DependentUpon>thxForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="thxRunnerReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="thxRunnerReg.Designer.cs">
+      <DependentUpon>thxRunnerReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateRunner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateRunner.Designer.cs">
+      <DependentUpon>updateRunner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userManagment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userManagment.Designer.cs">
+      <DependentUpon>userManagment.cs</DependentUpon>
+    </Compile>
     <Compile Include="variables.cs" />
     <EmbeddedResource Include="AuthificationForm.resx">
       <DependentUpon>AuthificationForm.cs</DependentUpon>
@@ -148,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="infoCharity.resx">
       <DependentUpon>infoCharity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainresult.resx">
+      <DependentUpon>mainresult.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="menuAdmin.resx">
       <DependentUpon>menuAdmin.cs</DependentUpon>
@@ -171,6 +204,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="regMarathon.resx">
+      <DependentUpon>regMarathon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RunnerReg.resx">
       <DependentUpon>RunnerReg.cs</DependentUpon>
     </EmbeddedResource>
@@ -179,6 +215,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="thxForm.resx">
       <DependentUpon>thxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="thxRunnerReg.resx">
+      <DependentUpon>thxRunnerReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateRunner.resx">
+      <DependentUpon>updateRunner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userManagment.resx">
+      <DependentUpon>userManagment.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -197,6 +242,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="bin\Debug\res\vopros.png" />
     <Content Include="res\flags\flag_andorra.png" />
     <Content Include="res\flags\flag_argentina.png" />
     <Content Include="res\flags\flag_australia.png" />

@@ -81,6 +81,10 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // timerDay
+            // 
+            this.timerDay.Tick += new System.EventHandler(this.timerDay_Tick);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -93,6 +97,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(3, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(569, 23);
@@ -123,6 +128,7 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "Marathon Skills 2020";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -201,6 +207,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "moreinfo";
             this.Text = "moreinfo";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.moreinfo_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
